@@ -15,3 +15,9 @@ fst_ang = int(input())
 sec_ang = int(input())
 trd_ang = int(input())
 
+sum_ang = fst_ang + sec_ang + trd_ang
+
+if sum_ang != 180:
+    print("Error")
+else:
+    
