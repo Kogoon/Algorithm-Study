@@ -9,7 +9,27 @@ acmicpc.net/problem/1181
     주어지는 문자열의 길이는 50을 넘지 않는다. 
 출력: 조건에 따라 정렬하여 단어들을 출력한다. 단, 같은 단어가 여러번 입력된 경우에는 한 번씩만 출력한다. 
 """
-
+p_words = []
+min_num, max_num = 0, 0
 N = int(input())
+
 for i in range(N):
-    print(i)
+    p_words.append(input())
+
+p_words.sort()
+#  words_length = []
+p_words.sort(key=len)
+print("----------------------------")
+#print(len(p_words[-1]))
+
+for i in range(N):
+    if i > 1:
+        if p_words[i] == p_words[i-1]:
+            pass
+        else:
+            print(p_words[i])
+
+    else:
+        print(p_words[i])
+
+
