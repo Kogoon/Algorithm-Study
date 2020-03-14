@@ -10,7 +10,27 @@ acmicpc.net/problem/10886
 출력: 준의가 귀엽지 않다는 의견이 더 많을 경우 "Junhee is not cute!"를 출력하고 귀엽다는 
     의견이 많을 경우 "Junhee is cute!"를 출력하라.
 """
+import sys
+
 people = int(input())
+if people % 2 == 0:
+    sys.exit()
+votes = []
+p_count = 0
+n_count = 0
 #if
 for vote in range(people):
-    
+    votes.append(int(input()))
+    if votes[vote] == 1:
+        p_count += 1
+    elif votes[vote] == 0:
+        n_count += 1
+    else:
+        sys.exit()
+
+if p_count > n_count:
+    print("Junhee is cute!")
+else:
+    print("Junhee is not cute!")
+
+
