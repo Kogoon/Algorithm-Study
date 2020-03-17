@@ -21,5 +21,10 @@ acmicpc.net/problem/10951
 )
 """
 while True:
-    A, B = map(int, input().split())
-    print(A+B)
+    try:
+        a, b = map(int, input().split())
+        print(a+b)
+    except:
+        break
+
+# EOF
