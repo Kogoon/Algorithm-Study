@@ -10,8 +10,8 @@ import sys
 
 N = int(input()) #정수의 개수
 numbers = list(map(int, input().split()))
-#if numbers > N:
-#    sys.exit()
+if len(numbers) > N:
+    sys.exit()
 numbers.sort()
 min_num = numbers[0]
 max_num = numbers[N-1]

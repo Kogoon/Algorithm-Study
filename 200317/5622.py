@@ -10,3 +10,38 @@ acmicpc.net/problem/5622
 입력: 첫째 줄에 알파벳 대문자로 이루어진 단어가 주어진다. 단어는 2글자~15글자로 이루어져 있다.
 출력: 첫째 줄에 다이얼을 걸기 위해서 필요한 시간을 출력한다. 
 """
+#Dial = {'1':['A','B','C'], '2':['D','E','F'], '3':['G','H','I']}
+Dial = {
+    'A':2,
+    'B':2,
+    'C':2,
+    'D':3,
+    'E':3,
+    'F':3,
+    'G':4,
+    'H':4,
+    'I':4,
+    'J':5,
+    'K':5,
+    'L':5,
+    'M':6,
+    'N':6,
+    'O':6,
+    'P':7,
+    'Q':7,
+    'R':7,
+    'S':7,
+    'T':8,
+    'U':8,
+    'V':8,
+    'W':9,
+    'X':9,
+    'Y':9,
+    'Z':9
+}
+WordForDial = list(input())
+time_sum = 0
+for alpha in WordForDial:
+    time_sum = time_sum + Dial[alpha] + 1
+
+print(time_sum)

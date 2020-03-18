@@ -7,4 +7,22 @@ acmicpc.net/problem/1065
 입력: 첫째 줄에 1,000보다 작거나 같은 자연수 N이 주어진다.
 출력: 첫째 줄에 1보다 크거나 같고 N보다 작거나 같은 한수의 개수를 출력한다.
 """
-N = int(input())
+N = list(input())
+if 1 <= N <= 9:
+    M = 1
+elif 10 <= N <= 99:
+    M = 2
+elif 100 <= N <= 999:
+    M = 3
+
+count = 0
+for i in range(1, N+1): 
+    if 1 <= N <= 9:
+        M = 1
+    elif 10 <= N <= 99:
+        M = 2
+    elif 100 <= N <= 999:
+        M = 3   
+    for j in range(M):
+        
+

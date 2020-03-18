@@ -21,4 +21,3 @@ acmicpc.net/problem/1002
 T = int(input())
 for i in range(3):
     x1, y1, r1, x2, y2, r2 = map(int, input().split())
-    
