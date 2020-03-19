@@ -1,4 +1,4 @@
-#
+# 2020.03.19
 # 자료구조
 """
 acmicpc.net/problem/10828
@@ -16,7 +16,7 @@ acmicpc.net/problem/10828
 출력: 출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다. 
 """
 # 스택
-
+"""
 
 n = int(input())
 
@@ -49,5 +49,13 @@ for i in range(n):
             print(stk[len(stk)])
         print("-1")
        
+"""
+import sys
+input = sys.stdin.readline
+
+def push(int x):
+    sk = []
+    sk.append(x)
+    return sk
 
     
