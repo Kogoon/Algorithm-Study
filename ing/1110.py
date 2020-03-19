@@ -15,14 +15,18 @@ acmicpc.net/problem/1110
 입력: 첫째 줄에 N이 주어진다. N은 0보다 크거나 같고, 99보다 작거나 같은 정수이다.
 출력: 첫째 줄에 N의 사이클 길이를 출력한다. 
 """
+import sys
+input = sys.stdin.readline
 
-num = input()
+num = input().rstrip()
 final = num
 count = 0
+#print(num, type(num))
+
 while True:
-    process = str(int(num[:1]) + int(num[-1]))
+    process = str(int(num[0]) + int(num[1]))
     num = num[-1] + process[-1]
-    count = count + 1
+    count += 1
     if(num == final):
         break
 print(count)
