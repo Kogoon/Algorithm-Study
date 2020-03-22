@@ -10,6 +10,7 @@
     1부터 8까지 숫자가 한 번씩 등장한다.
 출력: 첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.
 """
+"""
 numbers = list(input().split())
 
 one = 1
@@ -34,3 +35,38 @@ elif numbers[0] == 8:
 else:
     print("mixed")
     
+"""
+import sys
+input = sys.stdin.readline
+
+numbers = list(map(int, input().split()))
+
+if numbers[0] == 1:
+    temp = 0
+    for i in range(8):
+        if numbers[i] == i+1:
+            temp += 1
+        
+    if temp == 8:
+        print("ascending")
+        sys.exit()
+    else:
+        print("mixed")
+        sys.exit()
+
+elif numbers[0] == 8:
+    temp = 9
+    for i in range(8, 0, -1):
+        if numbers[i] == i-1:
+            temp -= 1
+        
+    if temp == 1:
+        print("ascending")
+        sys.exit()
+    else:
+        print("mixed")
+        sys.exit()
+
+else:
+    print("mixed")
+    sys.exit()

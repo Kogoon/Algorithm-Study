@@ -11,21 +11,15 @@ acmicpc.net/problem/1463
 입력: 첫째 줄에 1보다 크거나 같고, 10^6보다 작거나 같은 정수 N이 주어진다.
 출력: 첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다.
 """
-X = int(input())
-count = 0
-while True:
-    if(X==1):
-        break
+import sys
+input = sys.stdin.readline
 
-    if(X%3==0):
-        X = X / 3
-        count = count + 1
-    elif(X%2==0):
-        X = X / 2
-        count = count + 1
-    elif(X%3!=0 and X%2!=0):
-        X = X - 1
-        count = count + 1
+def make_one(x):
+    if x % 3 == 0:
+        return x/3
+    elif x % 2 == 0:
+        return x/2
+    else:
+        return x-1
 
-print(count)
 
