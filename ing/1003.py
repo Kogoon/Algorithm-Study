@@ -1,7 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-
 def fibonacci(n):
     global zero, one
     if(n == 0):

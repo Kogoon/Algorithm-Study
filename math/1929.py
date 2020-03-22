@@ -7,6 +7,19 @@ acmicpc.net/problem/1929
 출력: 한 줄에 하나씩, 증가하는 순서대로 소수를 출력한다.
 """
 # 소수 구하기
+import sys
+input = sys.stdin.readline
+
 M, N = map(int, input().split())
+sosu = []
+
+for i in range(2, int(N)):
+    if N % i != 0 :
+        sosu.append(i)
+
+for i in range(M, N):
+    if i in sosu:
+        print(i)
+
 
 
