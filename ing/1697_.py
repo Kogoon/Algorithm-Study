@@ -11,10 +11,6 @@ input = sys.stdin.readline
 N, K = map(int, input().split())
 #수빈 위치 N 동생 K
 time_sec = 0
-if N < K:
-    N -= 1
-    time_sec += 1
-
 while True:
     if K == N:
         print(time_sec)
