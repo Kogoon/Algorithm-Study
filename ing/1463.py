@@ -11,15 +11,20 @@ acmicpc.net/problem/1463
 입력: 첫째 줄에 1보다 크거나 같고, 10^6보다 작거나 같은 정수 N이 주어진다.
 출력: 첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다.
 """
+def dp(N):
+    print(N)
+    if N == 1:
+        return 1
+    if N%3!=0:
+        return dp(N-1), dp(N/2)
+    if N%2!=0:
+        return dp(N-1), dp(N/3)
+    
+
+
 import sys
 input = sys.stdin.readline
 
-def make_one(x):
-    if x % 3 == 0:
-        return x/3
-    elif x % 2 == 0:
-        return x/2
-    else:
-        return x-1
-
+N = int(input())
+print(dp(N))
 
