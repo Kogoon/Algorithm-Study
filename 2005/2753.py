@@ -8,7 +8,7 @@ acmicpc.net/problem/2753
     하지만, 2000년은 400의 배수이기 때문에 윤년이다. 
 입력: 첫째 줄에 연도가 주어진다. 연도는 1보다 크거나 같고, 4000보다 작거나 같은 자연수이다.
 출력: 첫째 줄에 윤년이면 1, 아니면 0을 출력한다.
-"""
+
 def find_leap_year(year):
     if year % 100 == 0 and year % 400 == 0:
         return 1
@@ -20,3 +20,20 @@ def find_leap_year(year):
 
 year = int(input())
 print(find_leap_year(year))
+"""
+import sys
+input = sys.stdin.readline
+
+year = int(input())
+#윤년이면 1, 아니면 0
+
+if year%4==0:
+    if year%400==0:
+        print("1")
+    elif year%100!=0:
+        print("1")
+    else:
+        print("0")
+else:
+    print("0")
+
