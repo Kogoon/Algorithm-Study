@@ -14,7 +14,7 @@ acmicpc.net/problem/1110
     N이 주어졌을 때, N의 사이클의 길이를 구하는 프로그램을 작성하시오.
 입력: 첫째 줄에 N이 주어진다. N은 0보다 크거나 같고, 99보다 작거나 같은 정수이다.
 출력: 첫째 줄에 N의 사이클 길이를 출력한다. 
-"""
+
 import sys
 input = sys.stdin.readline
 
@@ -31,3 +31,32 @@ while True:
         break
 print(count)
 #시간초과... 후;; 2초.. 
+
+import sys
+input = sys.stdin.readline
+
+def findme(number):
+    global count
+    if number == N and count != 0:
+        return count
+
+    addn = str(int(number[0]) + int(number[-1]))
+    number = number[-1] + addn[-1]
+    count += 1
+    return findme(number)
+
+
+count = 0
+N = str(input().rstrip())
+print(findme(N))
+"""
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+count = 0 
+number=N
+while True:
+    addn = str((N//10) + (N%10))
+    number = addn[1] + str(addn[-1])
+
