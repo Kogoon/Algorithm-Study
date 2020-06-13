@@ -11,12 +11,7 @@
 import sys
 input = sys.stdin.readline
 
-
-def fibonazzi(n):
-    if n==0:
-        return 0
-    elif n==1:
-        return 1
-    return fibonazzi(n-1) + fibonazzi(n-2)
 n = int(input())
-print(fibonazzi(n))
+dp = [0, 1]
+if n<=45:
+    

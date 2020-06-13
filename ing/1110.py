@@ -49,14 +49,29 @@ def findme(number):
 count = 0
 N = str(input().rstrip())
 print(findme(N))
-"""
+
 import sys
 input = sys.stdin.readline
 
-N = int(input())
-count = 0 
-number=N
-while True:
-    addn = str((N//10) + (N%10))
-    number = addn[1] + str(addn[-1])
+N = input().rstrip()
 
+if int(N) < 10:
+    N = '0' + N
+
+sum = str(int(N[0]) + int(N[1]))
+count = 1
+Num = N[1] + sum[-1]
+print(sum[-1])
+while True:
+    print(sum, Num)
+    if int(Num) == int(N):
+        break
+    sum = str(int(Num[1]) + int(sum[-1]))
+    Num = Num[1] + sum[-1]
+    count += 1
+
+
+print(count)
+"""
+import sys
+input = sys.stdin.readline
