@@ -1,4 +1,4 @@
-# 2020.03.20
+# 2020.06.30
 """
 문제: 피보나치 수는 0과 1로 시작한다. 0번째 피보나치 수는 0이고, 1번째 피보나치 수는 1이다. 그 다음 2번째 부터는 바로 앞 두 피보나치 수의 합이 된다.
     이를 식으로 써보면 Fn = Fn-1 + Fn-2 (n>=2)가 된다.
@@ -11,7 +11,13 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
-dp = [0, 1]
-if n<=45:
-    
+N = int(input())
+fibo = []
+for i in range(N+1):
+  if i <= 1:
+    fibo.append(i)
+  else:
+    temp = fibo[i-1] + fibo[i-2]
+    fibo.append(temp)
+
+print(fibo[N])
