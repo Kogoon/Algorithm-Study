@@ -1,2 +1,2 @@
 language = "python3"
-run = "run 2007/1476.py"
+run = "run main.py"
