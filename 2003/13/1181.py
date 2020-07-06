@@ -17,8 +17,10 @@ for i in range(N):
     p_words.append(input())
 
 p_words.sort()
+print(p_words)
 #  words_length = []
 p_words.sort(key=len)
+print(p_words)
 print("----------------------------")
 #print(len(p_words[-1]))
 
