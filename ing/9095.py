@@ -16,3 +16,5 @@ T = int(input())
 for i in range(T):
     N = int(input())
     memo = []
+    for j in range(N+1):
+        
