@@ -1,4 +1,4 @@
-# 2020.03.19
+# 2020.
 """
 acmicpc.net/problem/2869
 문제: 땅 위에 달팽이가 있다. 이 당팽이는 높이가 V미터인 나무 막대를 올라갈 것이다.
@@ -12,13 +12,13 @@ import sys
 input = sys.stdin.readline
 
 A, B, V = map(int, input().split())
-time = 0
-S = 0
-while S < V:
-    S += A
+time = 1
+temp = 0
+while True:
+    temp += A
+    if temp == V:
+        print(time)
+        sys.exit()
+    temp -= B
     time += 1
-    if S == V:
-        break
-    S -= B
 
-print(time)
