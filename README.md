@@ -10,14 +10,18 @@
 
 * * *
 ##### Memo.
- * python list 초기화 법. 
-   - a = [0 for i in range(10)]
-   - a = [0] * (10)
+ * python list 초기화 법.   
 
-   둘이 같은 결과. 
+~~~
+   - a = [0 for i in range(10)]  
+   - a = [0] * (10)  
+~~~
 
- * dictionary 연습 & counter 연습한 문제 -> 9375.py
-  -> counter : import collections
+   둘이 같은 결과.   
+  
+ * dictionary 연습 & counter 연습한 문제 -> 9375.py  
+  -> counter : import collections  
+ * 처음으로 deque 써서 푼 문제 -> 2164.py  
 * * *
 
 
