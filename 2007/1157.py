@@ -1,4 +1,4 @@
-# 2020.03.12
+# 2020.07.13
 """
 acmicpc.net/problem/1157
 문제: 알파벳 대소문자로 된 단어가 주어지면,
@@ -8,7 +8,31 @@ acmicpc.net/problem/1157
 출력: 첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다.
     단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다. 
 """
-prob_word = list(str(input()))
-prob_word.sort(key=str.lower)
+#prob_word = list(str(input()))
+#prob_word.sort(key=str.lower)
 
-alpha_dic = {}
+import sys
+input = sys.stdin.readline
+
+word = list(input().rstrip().upper())
+count = [0] * 26
+cnt = [0] * 26
+a = 0
+b = 0
+for w in word:
+    temp = ord(w)
+    temp -= 65
+    count[temp] += 1
+    cnt[temp] += 1
+
+cnt.sort(reverse=True)
+
+if cnt[0] == cnt[1]:
+    print("?")
+else:
+    for i in range(0, 26):
+        if count[i] > a:
+            a = count[i]
+            b = i
+    
+    print(chr(b+65))
