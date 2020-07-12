@@ -8,8 +8,6 @@ acmicpc.net/problem/1157
 출력: 첫째 줄에 이 단어에서 가장 많이 사용된 알파벳을 대문자로 출력한다.
     단, 가장 많이 사용된 알파벳이 여러 개 존재하는 경우에는 ?를 출력한다. 
 """
-#prob_word = list(str(input()))
-#prob_word.sort(key=str.lower)
 
 import sys
 input = sys.stdin.readline
