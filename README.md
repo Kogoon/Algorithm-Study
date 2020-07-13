@@ -3,7 +3,7 @@
 [![Run on Repl.it](https://repl.it/badge/github/Kogoon/algorithm-practice-boj)](https://repl.it/github/Kogoon/algorithm-practice-boj)
 ***
 
- - 쉬운문제부터 열심히 푸는 중... (101)
+ - 쉬운문제부터 열심히 푸는 중... (104)
 
   * 시간 : 1억 = 1초
   * 공간 : 1초 = 512MB
@@ -24,9 +24,10 @@
  * 처음으로 deque 써서 푼 문제 -> 2164.py  
 * * *
 
-
 Q1. 문제에서 주어지는 1 <= A, B <= 100 과 같은 조건도(오류방지) 코딩할때 신경써주어야 하는가.
 
+* * *
+[python 함수 시간](https://wiki.python.org/moin/TimeComplexity)
 * * *
 ##### <권장>
 input 대신에 sys.stdin.readline을 이용하도록 하자. 
