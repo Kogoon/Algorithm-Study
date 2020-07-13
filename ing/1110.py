@@ -1,4 +1,4 @@
-# 2020.01.06
+# 2020.07.14
 """
 acmicpc.net/problem/1110
 문제집 : 백준에서 가장 많이 풀린 문제 TOP 100 (입문자 추천) - njw1204
@@ -75,3 +75,15 @@ print(count)
 """
 import sys
 input = sys.stdin.readline
+
+N = int(input())
+check = N
+count = 0
+temp  = 0
+while True:
+  temp = (N//10) + (N%10)
+  N = (N%10)*10 + (temp%10)
+  count += 1
+  if N == check:
+    break
+print(count)
