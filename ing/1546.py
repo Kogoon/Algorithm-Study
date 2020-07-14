@@ -1,4 +1,4 @@
-# 2020.03.16
+# 2020.07.15
 """
 acmicpc.net/problem/1546
 문제집 : 백준에서 가장 많이 풀린 문제 TOP 100 (입문자 추천) - njw1204
@@ -11,7 +11,15 @@ acmicpc.net/problem/1546
     이 값은 100보다 작거나 같은 음이 아닌 정수이고, 적어도 하나의 값은 0보다 크다
 출력: 첫째 줄에 새로운 평균을 출력한다. 정답과의 절대/상대 오차는 10^-2까지 허용한다.
 """
-subject = int(input())
+import sys 
+input = sys.stdin.readline
 
-a, b, c = map(int, input().split())
-
+N = int(input())
+lst = list(map(int, input().split()))
+_max = max(lst)
+print(_max)
+sum = 0
+for i in range(N):
+  lst[i] = (lst[i]/_max)*100
+  sum += lst[i]
+print((sum)/N)
