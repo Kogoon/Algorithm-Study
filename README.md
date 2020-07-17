@@ -3,7 +3,7 @@
 [![Run on Repl.it](https://repl.it/badge/github/Kogoon/algorithm-practice-boj)](https://repl.it/github/Kogoon/algorithm-practice-boj)
 ***
 
- - 쉬운문제부터 열심히 푸는 중... (104)
+ - 쉬운문제부터 열심히 푸는 중... (145)
 
   * 시간 : 1억 = 1초
   * 공간 : 1초 = 512MB
