@@ -3,7 +3,7 @@
 [![Run on Repl.it](https://repl.it/badge/github/Kogoon/algorithm-practice-boj)](https://repl.it/github/Kogoon/algorithm-practice-boj)
 ***
 
- - 쉬운문제부터 열심히 푸는 중... (145)
+ - 쉬운문제부터 열심히 푸는 중... (146)
 
   * 시간 : 1억 = 1초
   * 공간 : 1초 = 512MB
@@ -40,6 +40,22 @@ EOF : 200318/10951
 
 
 * * *
+#### 알고리즘 문제 연습 사이트
+
+* https://algospot.com/
+* https://codeforces.com
+* http://topcoder.com
+* https://www.acmicpc.net/
+* https://leetcode.com/problemset/algorithms/
+* https://programmers.co.kr/learn/challenges
+* https://www.hackerrank.com
+* http://codingdojang.com/
+* http://codeup.kr/JudgeOnline/index.php
+* http://euler.synap.co.kr/
+* http://koistudy.net
+* https://www.codewars.com
+* https://app.codility.com/programmers/
+* http://euler.synap.co.kr/
 * * *
 
 [알고리즘 초보자, 어떻게 공부하면 좋을까 - YepBt/OKKY](https://okky.kr/article/705751)
